@@ -1,0 +1,6 @@
+{
+  "name": "AquaCheck",
+  "description": "Akıllı Su Ayak İzi Takibi ve Sürdürülebilirlik Yönetimi",
+  "requestFramePermissions": [],
+  "majorCapabilities": ["MAJOR_CAPABILITY_SERVER_SIDE_GEMINI_API"]
+}

@@ -1,0 +1,112 @@
+{
+  "entities": {
+    "UserProfile": {
+      "title": "UserProfile",
+      "description": "User profile with their settings, gaming progression, and stats",
+      "type": "object",
+      "properties": {
+        "username": {
+          "type": "string"
+        },
+        "fullName": {
+          "type": "string"
+        },
+        "email": {
+          "type": "string",
+          "format": "email"
+        },
+        "phone": {
+          "type": "string"
+        },
+        "photoUrl": {
+          "type": "string"
+        },
+        "dailyGoal": {
+          "type": "number"
+        },
+        "level": {
+          "type": "number"
+        },
+        "xp": {
+          "type": "number"
+        },
+        "streak": {
+          "type": "number"
+        },
+        "language": {
+          "type": "string"
+        },
+        "theme": {
+          "type": "string"
+        },
+        "font": {
+          "type": "string"
+        },
+        "notificationsEnabled": {
+          "type": "boolean"
+        },
+        "reminderInterval": {
+          "type": "number"
+        },
+        "createdAt": {
+          "type": "string"
+        },
+        "updatedAt": {
+          "type": "string"
+        }
+      },
+      "required": [
+        "username",
+        "email",
+        "dailyGoal",
+        "level",
+        "xp"
+      ]
+    },
+    "WaterRecord": {
+      "title": "WaterRecord",
+      "description": "A single logged water consumption event",
+      "type": "object",
+      "properties": {
+        "id": {
+          "type": "string"
+        },
+        "category": {
+          "type": "string"
+        },
+        "liters": {
+          "type": "number"
+        },
+        "date": {
+          "type": "string"
+        },
+        "time": {
+          "type": "string"
+        },
+        "note": {
+          "type": "string"
+        },
+        "createdAt": {
+          "type": "string"
+        }
+      },
+      "required": [
+        "id",
+        "category",
+        "liters",
+        "date",
+        "time"
+      ]
+    }
+  },
+  "firestore": {
+    "/users/{userId}": {
+      "schema": "UserProfile",
+      "description": "User profile, gaming levels, and preferences"
+    },
+    "/users/{userId}/records/{recordId}": {
+      "schema": "WaterRecord",
+      "description": "Water consumption entries for the user"
+    }
+  }
+}
