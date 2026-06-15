@@ -1,10 +1,8 @@
 {
-  "projectId": "gen-lang-client-0767865027",
-  "appId": "1:449207214050:web:18ecc7aaaec42c9ebd23bb",
-  "apiKey": "AIzaSyAHLAQvIRua9dT8a9kvOo0N8--ZzoSSgGE",
-  "authDomain": "gen-lang-client-0767865027.firebaseapp.com",
-  "firestoreDatabaseId": "ai-studio-25e88f98-ea2f-437a-9c63-3c5030786bd5",
-  "storageBucket": "gen-lang-client-0767865027.firebasestorage.app",
-  "messagingSenderId": "449207214050",
-  "measurementId": ""
+  "projectId": "aquacheck-c0fbf",
+  "appId": "1:61329404937:web:dd49c54ad4492d900974d8",
+  "apiKey": "AIzaSyA7M1th3DXD60H0YPDBqFUf6bGXfIXbh_w",
+  "authDomain": "aquacheck-c0fbf.firebaseapp.com",
+  "storageBucket": "aquacheck-c0fbf.firebasestorage.app",
+  "messagingSenderId": "61329404937"
 }
